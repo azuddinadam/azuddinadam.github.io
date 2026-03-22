@@ -129,7 +129,7 @@ hardware settings like colour format and orientation.
 Once the display is initialized, the following cycle will begin
 to render anything on the screen:
 
-![Render Cycle Diagram](../images/fbtft_render_cycle.png)
+![Render Cycle Diagram](/images/fbtft_render_cycle.png)
 
 The kernel uses a clever trick to know which regions in the display need updating.
 First, the framebuffer is marked as non writable in the page table.
