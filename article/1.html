@@ -1,0 +1,89 @@
+<!doctypehtml>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>How Linux DRM works</title>
+
+  <meta name="viewport"content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible"content="ie=edge">
+
+  <link rel="shortcut icon"href="../assets/favicon.ico"type="image/x-icon">
+  <link rel="preload"href="../styles/article.css"as="style">
+  <link rel="stylesheet"href="../styles/article.css">
+</head>
+<body>
+  <header id="top-container"role="navigation">
+    <nav>
+  <a class="logo-link"href="/">
+    <h1>Adam Azuddin</h1>
+    <span>My blog</span>
+  </a>
+  <small>
+    <a id="about"class="info-link"href="/about.html">👀About</a> /
+    <a id="works"class="info-link"href="/works.html">🔥Works</a> /
+    <a id="articles"class="info-link"href="/articles.html">📚Articles</a>
+  </small>
+</nav>
+
+  </header>
+  <main id="main-container">
+    <article id="article-container">
+      <h1 id="article-title">
+        How Linux DRM works
+      </h1>
+      
+        <h2 id="article-subtitle">
+          Similarities and differences with the legacy fbdev
+        </h2>
+      
+      <time id="article-date">
+        2026.03.21
+      </time>
+      <section id="article-content-container">
+        <details><summary>Table of Contents</summary>
+<p><div class="table-of-contents"><ul><li><a href="#kms">KMS</a><li><a href="#gem">GEM</a><li><a href="#panels">Panels</a><li><a href="#crtc">CRTC</a><li><a href="#encoder">Encoder</a></ul></div><p></p>
+</details>
+<p>Modern hardware has upgraded capabilities, so driver code need to utilize this.
+If you don’t know what a framebuffer device is, read this prev article first.</p>
+<h2 id="kms"tabindex="-1">KMS</h2>
+<ul>
+<li>set metadata like resolution and refresh rate</li>
+</ul>
+<h2 id="gem"tabindex="-1">GEM</h2>
+<ul>
+<li>allocate usable buffer and return an identifier</li>
+</ul>
+<h2 id="panels"tabindex="-1">Panels</h2>
+<h2 id="crtc"tabindex="-1">CRTC</h2>
+<ul>
+<li>merge panels into pixel data</li>
+</ul>
+<h2 id="encoder"tabindex="-1">Encoder</h2>
+<ul>
+<li>translate pixel data to actual signal to physically light up the pixels.</li>
+</ul>
+
+      </section>
+      <section id="article-navigation">
+        
+          <div class="article-navigation-item article-navigation-next">
+            <a href="/article/0.html">
+              <div class="article-navigation-arrow article-navigation-next">＜</div>
+              <div class="article-navigation-content article-navigation-next">
+                <p class="article-navigation-title">How the Linux Framebuffer works</p>
+                <p class="article-navigation-subtitle">Novices guide into the logic of fbtft driver subsystem.</p>
+              </div>
+            </a>
+          </div>
+        
+        
+      </section>
+      <section id="article-list-button-container">
+        <a href="/articles.html">
+          <div id="article-list-button">📚</div>
+        </a>
+      </section>
+    </article>
+  </main>
+
+
